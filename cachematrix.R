@@ -1,8 +1,8 @@
 ## Put comments here that give an overall description of what your functions do
 
 ## Matrix inversion is usually a costly computation. Caching the inverse of a matrix, 
-## rather than computing it repeatedly, is of benefit. The functions below are 
-## designed for this purpose. 
+## rather than computing it repeatedly, will reduce the burden of costly computation. 
+## The functions below are designed for this purpose. 
 
 ## Write a short comment describing this function
 
@@ -35,7 +35,7 @@ cacheSolve <- function(x, ...) {
       return(i)
     }
     m <- x$get()
-    i <- inverse(m, ...)
+    i <- solve(m, ...)
     x$setinverse(i)
     i
   }
